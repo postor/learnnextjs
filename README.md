@@ -1,6 +1,6 @@
 # 学习next.js
 
-- 1.[开始](./1-getting-started/README.md)
+- 1.[开始](./1-geting-started/README.md)
 - 2.浏览页面
 - 3.使用共享组件
 - 4.创建动态页面
