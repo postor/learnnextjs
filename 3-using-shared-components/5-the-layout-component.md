@@ -1,8 +1,8 @@
-# The Layout Component
+# 布局组件
 
-In our app, we'll use a common style across various pages. For this purpose, we can create a common Layout component and use it for each of our pages. Here's an example:
+在我们的应用程序中，我们将在各种页面中使用通用的样式。 为此，我们可以创建一个通用的布局组件，并为每个页面使用它。 以下是一个例子：
 
-Add this content to `components/MyLayout.js`:
+将此内容添加到`components/MyLayout.js`中：
 
 ```
 import Header from './Header'
@@ -23,7 +23,7 @@ const Layout = (props) => (
 export default Layout
 ```
 
-Once we've done that, we can use this Layout in our pages as follows:
+一旦我们这样做，我们可以在我们的页面中使用这个布局如下：
 
 ```
 // pages/index.js
@@ -52,9 +52,21 @@ Now let's try removing `{props.children}` from the Layout and see what happens t
 
 What will happen to the app?
 
+
 ```
 ✦There will be no effect.
 ✓The content of the page being displayed will be removed.
 ✦It will throw an error saying: “Layout needs some content.”
 ✦It will log a warning message for the browser component.
+```
+
+请记住，您可以访问 http://localhost:3000/ 来查看它的外观。
+
+现在我们来试试从“布局”中删除`{props.children}`，看看会发生什么？
+
+```
+✦不会有影响。
+✓显示页面的内容将被删除。
+✦会出现一个错误：“布局需要一些内容”。
+✦它将记录浏览器组件的警告消息。
 ```

@@ -1,4 +1,4 @@
-# EIT will always use 80
+# ZEIT will always use 80
 
 Actually, even if you start your app on port 8000, once deployed to now, you can access it with port 80 (or without a port).
 

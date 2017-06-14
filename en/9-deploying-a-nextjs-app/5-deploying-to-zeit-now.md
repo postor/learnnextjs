@@ -1,4 +1,4 @@
-Deploying to ▲ZEIT now
+# Deploying to ▲ZEIT now
 
 Now we know how to build and start a Next.js app. We did everything with npm scripts. So, you will be able to customize it to work with your favorite deployment service.
 
@@ -10,10 +10,15 @@ Just add the following npm scripts:
   "build": "next build",
   "start": "next start -p 8000"
 }
-Then install now. Then apply the following command:
 
+Then [install now](https://zeit.co/now). Then apply the following command:
+
+```
 now
-Basically, you run the “now” command inside your app's root directory.
+```
+
+> Basically, you run the “now” command inside your app's root directory.
+
 Here, we mentioned port 8000 as the port in which we start our app. But we didn't change it when deploying to ZEIT now.
 
 So, in which port could we access our app when deployed to ZEIT now?

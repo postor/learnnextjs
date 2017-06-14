@@ -1,4 +1,5 @@
 # Setup
+
 First of all, we need a simple Next.js app to play with. Try to download the following example app:
 
 ```

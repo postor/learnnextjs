@@ -1,4 +1,4 @@
-Using the Header Component
+# Using the Header Component
 
 Next, let's import this component and use it in our pages. For the index.js page, it will look like this:
 

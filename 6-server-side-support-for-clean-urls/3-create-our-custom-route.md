@@ -1,10 +1,10 @@
-# Create our Custom Route
+# 创建我们的自定义路由
 
-As you've experienced, the app will work just like it did previously because the custom server we wrote is similar to the “next” binary command.
+如您所见，应用程序将像以前一样工作，因为我们编写的定制服务器类似于“下一个”二进制命令。
 
-Now we are going to add a custom route to match our blog post URLs.
+现在我们要添加一个自定义路线来匹配我们的博客文章URL。
 
-With the new route, our `server.js` will look like this:
+使用新路由，我们的`server.js`将如下所示：
 
 ```
 const express = require('express')
@@ -39,7 +39,7 @@ app.prepare()
 })
 ```
 
-Have a look at the code below:
+看看下面的代码：
 
 ```
 server.get('/p/:id', (req, res) => {
@@ -49,21 +49,21 @@ server.get('/p/:id', (req, res) => {
 })
 ```
 
-Here, we simply mapped a custom route to our existing page "/post". We have also mapped query params as well.
+在这里，我们简单地将自定义路由映射到我们现有的页面“/post”。 我们也映射了查询参数。
 
-So, that's it.
+就是这样了。
 
-Now, restart your app and visit to following page:
+现在，重新启动您的应用程序并访问以下页面：
 
 http://localhost:3000/p/hello-nextjs
 
-Now you won't see the 404 page anymore but the actual page.
+现在你将看不到404页面，而是实际的页面。
 
-But there's an small issue. Can you identify it?
+但是还有一个小问题。 你可以发现吗？
 
 ```
-✦No. There are no issues.
-✓Client side rendered title and server side rendered title are different.
-✦Server side rendered page will have an error on the console.
-✦Client side rendered page will have an error on the console.
+✦No。 没有问题。
+✓客户端渲染标题和服务器端渲染标题不同。
+✦服务器端渲染页面将在控制台上发生错误。
+✦客户端渲染的页面将在控制台上发生错误。
 ```

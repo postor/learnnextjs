@@ -1,10 +1,10 @@
-# Route Masking
+# Route Masking（路由定制）
 
-Here, we are going to use a unique feature of Next.js called route masking. Basically, it will show a different URL on the browser than the actual URL that your app sees.
+在这里，我们将使用称为Route Masking的Next.js的独特功能。 基本上，它会在浏览器上显示与您的应用程序看到的实际URL不同的URL。
 
-Let's add a route mask to our blog post URL.
+我们在我们的博客文章URL中添加一个路由掩码。
 
-Use the following code for the `pages/index.js`:
+对`pages/index.js`应用以下代码：
 
 ```
 import Layout from '../components/MyLayout.js'
@@ -30,7 +30,7 @@ export default () => (
 )
 ```
 
-Have look at the following code block:
+看看下面的代码块：
 
 ```
 const PostLink = (props) => (
@@ -42,11 +42,11 @@ const PostLink = (props) => (
 )
 ```
 
-In the `<Link>` element, we have used another prop called “as”. That's the URL which we need to show on the browser. The URL your app sees is mentioned in the “href” prop.
+在`<Link>`元素中，我们使用了另一个称为“as”的支柱。 这是我们需要在浏览器上显示的URL。 您的应用看到的URL在“href” prop 中被提及。
 
-Now try to click on the first blog post and you'll be navigated to the blog post.
+现在尝试点击第一个博文，你将被导航到博客文章。
 
-After that, hit the **back** button and then hit the **forward** button. What will happen?
+之后，点击**返回**按钮，然后按**前进**按钮。 会发生什么？
 
 ```
 ✦It throws an error.
