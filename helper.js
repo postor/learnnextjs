@@ -1,7 +1,7 @@
 
 var url = require('url')
 
-module.exports.getMdPage(path){
+module.exports.getMdPage = function(path){
   url.format({
     pathname: path.join(__dirname, 'resources', 'markdown.html'),
     protocol: 'file:',
