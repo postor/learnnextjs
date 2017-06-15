@@ -19,6 +19,7 @@
   "homepage": "https://github.com/postor/learnnextjs#readme",
   "dependencies": {
     "fs-extra": "^3.0.1",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "showdown": "^1.7.1"
   }
 }
