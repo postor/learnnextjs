@@ -1,5 +1,6 @@
 const url = require('url')
 const fs = require('fs-extra')
+const $ = require('jquery')
 
 var showdown  = require('showdown'),
 
@@ -11,5 +12,5 @@ fs.readFile(markdownPath)
 .then((markdownContent)=>{  
     converter = new showdown.Converter(),
     html      = converter.makeHtml(markdownContent);
-    document.write(html)
+    $('body').html(html)
 })

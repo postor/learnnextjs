@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/postor/learnnextjs#readme",
   "dependencies": {
-    "fs-extra": "^3.0.1"
+    "fs-extra": "^3.0.1",
+    "jquery": "^3.2.1"
   }
 }
