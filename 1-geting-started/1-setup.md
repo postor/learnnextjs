@@ -44,5 +44,3 @@ npm run dev
 ✦Hello Next.js
 ✦Hello World
 ```
-
-[继续](./2-404-page.md)
