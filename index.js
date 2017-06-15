@@ -10,7 +10,7 @@ module.exports = {
         {
           title:'NodeJS',
           desc: '如果你还没有NodeJS环境，请先回到',
-          page: path.join(__dirname,'resources','openurl.html'), 
+          page: path.join(__dirname,'resources','markdown.html'), 
           validate: [            
             {
               cmd: 'node -v',
