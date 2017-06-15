@@ -9,7 +9,7 @@ var markdownPath = urlObj.searchParams.get('md')
 
 fs.readFile(markdownPath)
 .then((markdownContent)=>{  
-    converter = new showdown.Converter()
-    html      = converter.makeHtml(markdownContent)
+    var converter = new showdown.Converter()
+    var html      = converter.makeHtml(markdownContent.toString())
     $('.markdown-body').html(html)
 })
