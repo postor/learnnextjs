@@ -1,13 +1,14 @@
 
 var url = require('url')
+var path = require('path')
 
-module.exports.getMdPage = function(path){
+module.exports.getMdPage = function(p){
   url.format({
     pathname: path.join(__dirname, 'resources', 'markdown.html'),
     protocol: 'file:',
     slashes: true,
     query:{
-      md: path,
+      md: p,
     }
   })
 }
