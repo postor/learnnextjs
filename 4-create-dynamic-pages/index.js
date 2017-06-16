@@ -53,7 +53,7 @@ module.exports = {
         },
         {
           callback: (cwd)=>{
-            var tpath = path.join(cwd,'learnnextjs-demo','pages','about.js')
+            var tpath = path.join(cwd,'learnnextjs-demo','pages','post.js')
             var content = fs.readFileSync(tpath).toString()
             return /props\.url\.query\.title/.test(content)
           },
