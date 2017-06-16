@@ -1,4 +1,4 @@
-# Using the Header Component
+# 使用顶部导航
 
 接下来，我们导入此组件并将其用于我们的页面。 对于index.js页面，它将如下所示：
 

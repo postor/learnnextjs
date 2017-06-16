@@ -42,6 +42,3 @@ export default Index
 ✓显示语法错误的错误
 ✦500 - 内部错误有一个错误
 ```
-
-
-[继续](./4-handling-errors.md)

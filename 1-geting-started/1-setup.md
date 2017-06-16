@@ -8,7 +8,7 @@ Next.js适用于Windows，Mac和Linux。 您只需要在系统上安装Node.js�
 > Next.js适用于任何shell或终端，但我们将在本指南中使用一些UNIX特定的命令。
 > 我们建议您使用PowerShell来轻松追踪。
 
-要开始，请通过运行以下命令创建示例项目：
+要开始，请通过运行以下命令创建示例项目（点击`打开工作目录命令行`运行以下代码）：
 
 ```
 mkdir hello-next
@@ -18,7 +18,7 @@ npm install --save react react-dom next
 mkdir pages
 ```
 
-然后在hello-next目录中打开“package.json”，并添加以下NPM脚本。
+然后在hello-next目录中打开“package.json”，并添加以下NPM脚本。（点击`打开工作目录文件夹`可以找到刚刚创建的hello-next目录）
 
 ```
 {
