@@ -20,10 +20,6 @@ module.exports = {
               cmd: 'npm -v',
               errorMsg: 'npm 没有正确安装', 
             },
-            {
-              cmd: 'yarn -v',
-              errorMsg: 'yarn 没有正确安装', 
-            },
           ],
         },
       ]
