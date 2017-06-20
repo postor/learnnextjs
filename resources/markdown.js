@@ -12,10 +12,13 @@ fs.readFile(markdownPath)
 .then((markdownContent)=>{  
     var converter = new showdown.Converter()
     var html      = converter.makeHtml(markdownContent.toString())
-    $('.markdown-body').html(html)
+    $('.markdown-body').html(html)    
+    return true
+})
+.then(()=>{
     $('a').click(function(e){
         e.preventDefault()
-        var src = $(this).attr('src')
+        var src = $(this).attr('href')
         if(src.startsWith('http')){
             child_process.execSync('start '+src)
         }
